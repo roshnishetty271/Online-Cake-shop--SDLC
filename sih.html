@@ -1,0 +1,266 @@
+<html>
+<head>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "sih.css" >
+   <script src = "sih.js"> </script>
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+  <script>
+$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".box").not(targetBox).hide();
+        $(targetBox).show();
+    });
+});
+</script>
+
+
+</head>
+<body>
+
+
+<div class="container">  
+  <form id="contact" action="" method="post">
+  
+  
+  
+  
+  <div class="file-field">
+    <div class="mb-4">
+      <img src="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg"
+        class="rounded-circle z-depth-1-half avatar-pic" alt="example placeholder avatar"  id="output" width="200" >
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="btn btn-mdb-color btn-rounded float-left">
+        
+        <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+		<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+
+
+      </div>
+    </div>
+    </div>
+<br>
+    <fieldset>
+    Name <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+	<br>
+    <fieldset>
+    Email<input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+	<br>
+    <fieldset>
+     Mobile <input placeholder="Your Mobile Number " type="tel" tabindex="3" required>
+    </fieldset>
+	<br>
+    State
+	
+	<div class="form-group">
+			<select class="form-control" id="state" name="state" required>
+<option value="">Select State</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Orissa">Orissa</option>
+<option value="Pondicherry">Pondicherry</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttaranchal">Uttaranchal</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="West Bengal">West Bengal</option>				
+
+			</select>
+		</div>
+		<br>
+	<fieldset>
+    City <input placeholder="Your City" type="url" tabindex="4" required>
+    </fieldset>
+	<br>
+	<fieldset>
+    Address<input placeholder="Your Address" type="url" tabindex="4" required>
+    </fieldset>
+	
+	<br>
+	
+	Preferred Mentorship Stage
+	
+	<div class="form-group">
+			<select class="form-control" id="interest" name="intersert">
+				<option>Ideation</option>
+				<option>MVP(Minimum Viable Products)</option>
+				<option>Product-Market Fit</option>
+				<option>Channel-Product Fit</option>
+				<option>Maturity</option>
+
+			</select>
+		</div>
+		
+		<br>
+		Industry
+    
+    <div class="input-group">
+        <select name="Industry" class="form-control selectpicker" required > 
+        <option value="">Select Industry</option>
+         <option value="Aeronautics Aerospace & Defence">Aeronautics Aerospace & Defence</option>
+<option value="Agriculture">Agriculture</option>
+<option value="AI">AI</option>
+<option value="Airport Operations">Airport Operations</option>
+<option value="Analytics">Analytics</option>
+<option value="Animation">Animation</option>
+<option value="AR VR (Augmented + Virtual Reality)">AR VR (Augmented + Virtual Reality)</option>
+<option value="Architecture Interior Design">Architecture Interior Design</option>
+<option value="Art & Photography">Art & Photography</option>
+<option value="Automotive">Automotive</option>
+<option value="Biotechnology">Biotechnology</option>
+<option value="Chemicals">Chemicals</option>
+<option value="Computer Vision">Computer Vision</option>
+<option value="Construction">Construction</option>
+<option value="Dating Matrimonial">Dating Matrimonial</option>
+<option value="Design">Design</option>
+<option value="Education">Education</option>
+<option value="Enterprise Software">Enterprise Software</option>
+<option value="Events">Events</option>
+<option value="Fashion">Fashion</option>
+<option value="Finance Technology">Finance Technology</option>
+<option value="Food & Beverages">Food & Beverages</option>
+<option value="Green Technology">Green Technology</option>
+<option value="Healthcare & Lifesciences">Healthcare & Lifesciences</option>
+<option value="House-Hold Services">House-Hold Services</option>
+<option value="Human Resources">Human Resources</option>
+<option value="Internet of Things">Internet of Things</option>
+<option value="IT Services">IT Services</option>
+<option value="Logistics">Logistics</option>
+<option value="Marketing">Marketing</option>
+<option value="Media & Entertainment">Media & Entertainment</option>
+<option value="Nanotechnology">Nanotechnology</option>
+<option value="Non- Renewable Energy">Non- Renewable Energy</option>
+<option value="Other Specialty Retailers">Other Specialty Retailers</option>
+<option value="Passenger Experience">Passenger Experience</option>
+<option value="Pets & Animals">Pets & Animals</option>
+<option value="Professional & Commercial Services">Professional & Commercial Services</option>
+<option value="Real Estate">Real Estate</option>
+<option value="Renewable Energy">Renewable Energy</option>
+<option value="Retail">Retail</option>
+<option value="Robotics">Robotics</option>
+<option value="Safety">Safety</option>
+<option value="Security Solutions">Security Solutions</option>
+<option value="Social Impact">Social Impact</option>
+<option value="Social Network">Social Network</option>
+<option value="Sports">Sports</option>
+<option value="Technology Hardware">Technology Hardware</option>
+<option value="Telecommunication & Networking">Telecommunication & Networking</option>
+<option value="Textiles & Apparel">Textiles & Apparel</option>
+<option value="Transportation & Storage">Transportation & Storage</option>
+<option value="Travel & Tourism">Travel & Tourism</option>
+<option value="Waste Management">Waste Management</option>
+<option value="Others">Others</option>
+    
+			</select>
+		</div>
+		<br>
+	        
+		<p>Interest:</p>
+	
+		<div>
+        <label><input type="radio" name="colorRadio" value="red" unchecked> Technical</label>
+		 <label><input type="radio" name="colorRadio" value="green" unchecked> Non Technical</label>
+		</div>
+		
+		
+		<div class="red box">
+    
+			<select class="form-control" id="interest" name="intersert">
+				<option>Engagement improving services</option>
+				<option>Banking sector assistance</option>
+				<option>Life Insurance Startup</option>
+				<option>Social Media app</option>
+				<option>Business analytics platform</option>
+                <option>Robotics/AI</option>
+			</select>
+	
+    </div>
+	
+	
+    <div class="green box">
+	
+	<select class="form-control" id="interest" name="intersert">
+				<option>Music</option>
+				<option>Restaurant/Cafe</option>
+				<option>Repair service</option>
+				<option>Lifestyle</option>
+				<option>Beauty and Fashion</option>
+                <option>Finance</option>
+			</select>
+	
+	
+	
+	
+	</div>
+		
+		<p>.</p>	
+			
+			
+		
+	
+		<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+		
+		
+		
+	
+    <fieldset>
+     Description <textarea placeholder="Type here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+	
+	
+
+	
+</form>
+  </div>
+  
+ 
+</body>
+</html>
