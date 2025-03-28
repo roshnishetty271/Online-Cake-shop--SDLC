@@ -3,7 +3,7 @@
 
 ABSTRACT: We have designed an online cake shop that allows users to check for various cakes available and purchase them online. The website consist of list of cakes displayed in various categories. The user may browse through these items as per categories .User has also option for ordering customised cakes according to their requirements like cake’s flavour size, shape and so on. Thus the website for an online cake shop brings the entire cake shop online and makes it easy for both buyer and seller. It contains login page for admin as well as users. Registered users can purchase cakes directly or by adding it to cart.  
 
-***SOFTWARE DEVELOPMENT LIFE CYCLE PHASES***
+***SOFTWARE DEVELOPMENT LIFE CYCLE PHASES:***
 
 Phase 1: REQUIREMENT GATHERING PHASE
 
